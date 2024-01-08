@@ -1,0 +1,26 @@
+@import 'Color.scss';
+.product{
+    height: 58rem;
+    padding:1rem;
+    position: relative;
+    >.producttext{
+        position: relative;
+        top: 8%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        >h1{
+            font-size: 2.3vmax;
+            color:$bg;
+            text-decoration: underline;
+            text-shadow: 2px 6px 10px $bg;
+        }
+    }
+    >.p1{
+         display: flex;
+         justify-content: center;
+         position: absolute;
+         top:18%;
+         flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,67 @@
+@import 'Color.scss';
+.About_Section{
+    height: 41.2rem;
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    >.About_left{
+       width: 50%;
+       padding:1rem;
+       
+       >.content{
+        top: 10vmax;
+       position: relative;
+        >h1{
+            font-size: 3vmax;
+           }
+           >p{
+            width: 80%;
+            font-size: 1.2vmax;
+            margin-top: 1vmax;
+            letter-spacing: 0.1vmax;
+        
+           }
+        .abttext{
+            color:$bg;
+            text-shadow: 2px 6px 10px $bg;
+           }
+           >button{
+            margin-top: 5%;
+            background: $btnbg;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 4px;
+            color: $text;
+            font-size:1.1vmax;
+            cursor:pointer;
+            width:17%;
+            }
+       }
+      
+    }
+    >.About_right{
+        width: 50%;
+        background: #001e5e;
+        border-top-left-radius: 25%;
+        border-bottom-left-radius: 25%;
+        height: 95%;
+        position: relative;
+        top:5%;
+        padding: 1rem;
+    
+      >img{
+        height: 60%;
+       position: absolute;
+       left: 37%;
+       top: 14%;
+       animation: imageup 0.8s linear infinite alternate;
+      }
+    }
+}
+
+@keyframes imageup{
+    to{
+        transform: translateY(-10px);
+    }
+}

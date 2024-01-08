@@ -1,0 +1,78 @@
+@import 'Color.scss';
+
+.cont_sec{
+    height: 41.2rem;
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+  >.cont_sec1{
+    width: 50%;
+    background: #001e5e;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+    height: 95%;
+    position: relative;
+    top:5%;
+    padding: 1rem;
+    >img{
+        height: 60%;
+       position: absolute;
+       left: 37%;
+       top: 14%;
+       animation: imageup 0.8s linear infinite alternate;
+      }
+      
+  }
+  >.cont_sec2{
+    width:50%;
+    
+    >.seccont{
+        width:60%;
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    left:20%;
+    top:15%;
+    >input{
+        margin:2% 0% 2% 0%;
+        height:2.5vmax;
+        border-radius: 4px;
+        outline: none;
+        border:1px solid $bg;
+        padding:10px;
+    }
+    >h1{
+        color:$bg;
+        font-size: 3vmax;
+        text-shadow: 2px 6px 10px $bg;
+      }
+      >p{
+        margin-bottom:10px;
+        font-size: 1.3vmax;
+      }
+    >textarea{
+        margin:2% 0% 2% 0%;
+       padding:10px;
+    }
+    >button{
+        margin-top: 5%;
+        background: $btnbg;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 4px;
+        color: $text;
+        font-size:1.1vmax;
+        cursor:pointer;
+        width:26%;
+        }
+    }
+   
+  }
+}
+@keyframes imageup{
+    to{
+        transform: translateY(-10px);
+    }
+}

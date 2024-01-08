@@ -1,0 +1,16 @@
+.carousel{
+  height: 41.2rem;
+ 
+  >.carousel-slider{
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    top: 50%;
+  }
+  >.carousel-root{
+  width: 80%;
+  height: 11vmax;
+  height: 20% !important;
+  margin: auto;
+  }
+}

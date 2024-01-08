@@ -1,0 +1,29 @@
+@import 'Color.scss';
+nav{
+    display: flex;
+    padding:0 1rem 0 1rem;
+    background-color:$bg;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    top:0%;
+    z-index:10;
+    >h1{
+        color:$text;
+    }
+   >main{
+   width:70%;
+   display:flex;
+   justify-content: flex-end;
+    >a{
+        margin:1rem;
+        color:$text;
+        text-decoration: none;
+        &:hover{
+            margin:1rem;
+            color:$text;
+            text-decoration: none;
+        }
+    }
+   }
+}

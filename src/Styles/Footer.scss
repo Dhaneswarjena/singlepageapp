@@ -1,0 +1,66 @@
+@import 'Color.scss';
+
+.footer{
+    display:flex;
+    justify-content: space-between;
+    background: $ftcol;
+    min-height:15vmax;
+    color:$text;
+    padding:1rem;
+    >.foot_left{
+      width:30%;
+      margin-top: 2%;
+      padding-right:10px;
+      >h2{
+        font-size: 2vmax;
+        margin-bottom: 4%;
+      }
+      >p{
+        margin-top: 4%;
+      }
+      a{
+        color:$text;
+        text-decoration: none;
+        font-size: 20px
+      }
+    }
+    >.foot_middle{
+        margin-top: 2%;
+        width:40%;
+        display:flex;
+        position: relative;
+        padding-right:10px;
+        >ul{
+            position:absolute;
+            left:20%;
+           >li{
+            margin-bottom: 4%;
+            font-size: 20px
+           }
+          }
+          >.right_list{
+            position:absolute;
+            left:70%;
+          }
+    }
+    >.foot_last{
+        margin-top: 2%;
+        width:30%;
+        padding-right:10px;
+        position: relative;
+        >h2{
+            font-size: 2vmax;
+            margin-bottom: 4%;
+            margin-left:15%;
+          }
+         >p{ 
+            margin-left:15%;
+         }
+          a{
+            color:$text;
+            text-decoration: none;
+            font-size: 20px;
+            
+          }
+    }
+}
